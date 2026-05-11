@@ -735,6 +735,20 @@
       .nav-inner{height:68px}
       .brand img{height:36px}
     }
+
+    .trust-strip { background: #111316; padding: 48px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .trust-header { margin-bottom: 32px; }
+    .trust-header b { font-family:"Barlow Condensed"; font-size:1.55rem; text-transform:uppercase; color:#fff; display:block; }
+    .trust-header span { font-weight:700; color:rgba(255,255,255,.55); font-size:.9rem; }
+    .client-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:28px; }
+    .client-card { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); border-radius:14px; padding:16px 18px; }
+    .client-name { display:block; color:#fff; font-weight:800; font-size:1rem; margin-bottom:4px; }
+    .client-industry { display:block; color:#F5A623; font-size:.8rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
+    .sika-badge { display:inline-flex; align-items:center; gap:12px; border:2px solid #e8000d; border-radius:14px; padding:12px 20px; background:rgba(255,255,255,.04); }
+    .sika-badge img { height:34px; width:auto; background:#fff; border-radius:6px; padding:3px 6px; }
+    .sika-badge span { color:#fff; font-size:.88rem; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+    @media(max-width:900px){ .client-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:560px){ .client-grid{ grid-template-columns:1fr 1fr; } }
   </style>
 </head>
 
@@ -779,21 +793,24 @@
   </header>
 
   <div class="trust-strip">
-    <div class="wrap trust">
-      <div>
-        <b>Experiencia en industrias de alta exigencia</b><br>
+    <div class="wrap">
+      <div class="trust-header">
+        <b>Experiencia en industrias de alta exigencia</b>
         <span>Referencias disponibles bajo solicitud</span>
       </div>
-
-      <div class="logo-list">
-        <span class="logo-chip">Walmart</span>
-        <span class="logo-chip">Coca-Cola FEMSA</span>
-        <span class="logo-chip">Gruma</span>
-        <span class="logo-chip">Bachoco</span>
-        <span class="logo-chip">Chobani</span>
-        <span class="logo-chip">Vidanta</span>
-        <span class="logo-chip">Matco / CAT</span>
-        <span class="logo-chip">Banco de México</span>
+      <div class="client-grid">
+        <div class="client-card"><span class="client-name">Walmart</span><span class="client-industry">Logística / Retail</span></div>
+        <div class="client-card"><span class="client-name">Coca-Cola FEMSA</span><span class="client-industry">Alimenticia / Bebidas</span></div>
+        <div class="client-card"><span class="client-name">Gruma</span><span class="client-industry">Producción alimenticia</span></div>
+        <div class="client-card"><span class="client-name">Bachoco</span><span class="client-industry">Industria avícola</span></div>
+        <div class="client-card"><span class="client-name">Chobani</span><span class="client-industry">Lácteos / Sanitario</span></div>
+        <div class="client-card"><span class="client-name">Banco de México</span><span class="client-industry">Institucional</span></div>
+        <div class="client-card"><span class="client-name">Vidanta</span><span class="client-industry">Hotelería</span></div>
+        <div class="client-card"><span class="client-name">Matco / CAT</span><span class="client-industry">Maquinaria industrial</span></div>
+      </div>
+      <div class="sika-badge">
+        <img src="assets/logo-sika.png" alt="Sika">
+        <span>Aplicadores certificados · Distribuidores oficiales</span>
       </div>
     </div>
   </div>
