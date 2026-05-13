@@ -178,8 +178,8 @@
   <meta property="og:title" content="Lic. Francisco Quintero · PPC" />
   <meta property="og:description" content="Representante Técnico — Comercial · WhatsApp 331 044 8860" />
   <meta property="og:image" content="https://ppclanding.online/assets/tarjeta-francisco-og.png" />
-  <meta property="og:image:width" content="840" />
-  <meta property="og:image:height" content="1560" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
   <meta property="og:url" content="https://ppclanding.online/tarjeta-francisco.html" />
   <meta name="twitter:card" content="summary_large_image" />
 </head>
@@ -233,6 +233,12 @@
       colorLight: '#ffffff',
       correctLevel: QRCode.CorrectLevel.M
     });
+  </script>
+  <script>
+    if(window.location.search.includes('og=1')){
+      document.body.style.cssText = 'display:flex;align-items:center;justify-content:center;min-height:630px;background:#0f0f0f;';
+      document.querySelector('.card').style.cssText = 'transform:scale(0.75);margin:0 auto;';
+    }
   </script>
 </body>
 </html>
